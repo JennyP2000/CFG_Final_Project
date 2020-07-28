@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Home Page</title>
+</head>
+<body>
+  <main>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+          <li class="topNavList"><a class="active" href="index.html" >Home</a></li>
+          <li class="topNavList"><a href="index2.html">Dairy Free</a></li>
+          <li class="topNavList"><a href="index3.html">Gluten Free</a></li>
+          <li class="topNavList"><a href="index4.html">Nut Free</a></li>
+          <li class="topNavList"><a href="index5.html">Vegan</a></li>
+          <li class="topNavList"><a href="index6.html">Index</a></li>
+      </ul>
+    </nav>
+      <h1>DELICIOUS DESSERTS*</h1>
+      <h2>*without the worry</h2>
+    </div>
+
+  </main>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="pics/sorbet.jpg" style="width:100%">
+    <div class="text">Sorbet</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="pics/choc&cherry.jpg" style="width:100%">
+    <div class="text">Chocolate and Cherry</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="pics/eton_mess.jpg" style="width:100%">
+    <div class="text">Eton Mess</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</main>
+
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  <footer>
+    <a href="https://www.tesco.com/" class="footer__links">
+      <span class="material-icons">storefront</span>
+    </a>
+    <a href="index7.html" class="footer__links">
+      <span class="material-icons">email</span>        
+      </a>
+    <a href="https://www.instagram.com/" class="footer__links">
+      <span class="fa fa-instagram" aria-hidden="true"></span>          
+    </a>  
+    <a href="https://www.facebook.com/" class="footer__links">
+      <span class="fa fa-facebook-square" aria-hidden="true"></span>
+    </a>
+    <a href="" class="footer__links">
+      <span class="material-icons">translate</span>
+    </a>
+</footer>
+</body>
+</html>
